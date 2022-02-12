@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.activity.viewModels
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
+import com.example.viewmodelhilt.app.GitHubViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,8 +20,4 @@ class MainActivity : AppCompatActivity() {
         Log.v("DEBUGLOG", gitHubViewModel.a)
     }
 
-}
-
-class GitHubViewModel @ViewModelInject constructor(): ViewModel() {
-    val a = "A"
 }
